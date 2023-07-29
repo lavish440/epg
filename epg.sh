@@ -5,5 +5,5 @@ python epg.py epg.xml.gz
 termux-notification --id "epg" --group "group" -c "EPG Generation Finished"
 git add epg.xml.gz
 git commit -m "Updated EPG"
-git push
+git push origin
 termux-notification --id "epg" --group "group" -c "EPG pushed to Github"
