@@ -80,7 +80,7 @@ if __name__ == "__main__":
         "programme": programme
     }}
     epgxml = xmltodict.unparse(epgdict, pretty=True)
-    with open(sys.argv[1], 'wb+') as f:
+    with open("epg.xml.gz", 'wb+') as f:
         f.write(gzip.compress(epgxml.encode('utf-8')))
     # with open(sys.argv[1], 'rb') as f_in:
     #     with gzip.open(sys.argv[2], 'wb+') as f_out:
