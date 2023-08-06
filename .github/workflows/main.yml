@@ -26,7 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests xmltodict pysocks
       - name: Start tor proxy
-        run: tor ExitNodes {in} StrictNodes 1
+        run: sudo tor ExitNodes {in} StrictNodes 1
       - name: Get EPG Data
         run: torsocks python epg.py
       - name: pull latest
