@@ -1,10 +1,5 @@
 name: EPG Service
-
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 1 * * *" # every day at 1:00am UTC (6:30am IST)
-
+on: workflow_run
 jobs:
   epg:
     runs-on: ubuntu-latest
